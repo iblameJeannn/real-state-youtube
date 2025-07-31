@@ -50,7 +50,7 @@ export function Properties() {
                 ))}
             </div>
             <div className="text-center my-7">
-                {counterBikes > dataProperties.length && (
+                {counterBikes < dataProperties.length && (
                     <button 
                         className="px-6 py-6 text-white transition-all duration-150 cursor-pointer bg-secondary rounded-xl hover:bg-black"
                         onClick={loadMoreBikes}
